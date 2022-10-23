@@ -87,8 +87,8 @@ jobs:
           name: Build app and test app
           command: ./gradlew app:assembleRelease macrobenchmark:assemble
       - gcp-cli/initialize:
-          gcloud-service-key: GCP_SA_KEY
-          google-project-id: GCP_PROJECT_ID
+          gcloud-service-key: 00aa8bf18e356c7578dff5a155652ed2868641bd
+          google-project-id: metal-lantern-366414
       - run:
           name: run on FTL
           command: |
